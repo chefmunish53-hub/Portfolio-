@@ -4,7 +4,7 @@ const DISHES_DATA = [
                 name: 'Tandoori MoMo with Chilly Coriander Sauce',
                 course: 'Amuse & Starters',
                 desc: 'Juicy momos marinated in flavorful tandoori spices, grilled to perfection for a smoky, charred finish, and served with a fresh, spicy chilli-coriander sauce. A delicious starter packed with bold Indian flavors.',
-                image: './tandoori-momo.jpg'
+                image: './tandoori-momo.JPG'
             },
             {
                 id: 'dish-crudo',
