@@ -4,21 +4,21 @@ const DISHES_DATA = [
                 name: 'Tandoori MoMo with Chilly Coriander Sauce',
                 course: 'Amuse & Starters',
                 desc: 'Juicy momos marinated in flavorful tandoori spices, grilled to perfection for a smoky, charred finish, and served with a fresh, spicy chilli-coriander sauce. A delicious starter packed with bold Indian flavors.',
-                image: './tandoori-momo.jpeg'
+                image: './tandoori-momo.jpg'
             },
             {
                 id: 'dish-crudo',
                 name: 'Guacamole mango cup ',
                 course: 'Amuse & Starters',
                 desc: 'A refreshing blend of creamy avocado and juicy ripe mango, tossed with fresh herbs, zesty lime, and a hint of spice. Served in a delightful cup, this vibrant starter offers the perfect balance of sweet, tangy, and creamy flavours.',
-                image: './guacamole-mango-cup.jpeg'
+                image: './guacamole-mango-cup.jpg'
             },
             {
                 id: 'dish-turbot',
                 name: 'Italian Samosa with Muhammara Sauce',
                 course: 'Amuse & Starters',
                 desc: 'Crispy golden samosas filled with a delicious Italian-inspired mixture of herbs, cheese, and savoury flavours, served with rich and smoky Muhammara sauce made from roasted red peppers and walnuts. A delightful fusion starter combining Italian flavours with a Middle Eastern twist.',
-                image: './italian-samosa.jpeg'
+                image: './italian-samosa.jpg'
             },
             {
                 id: 'dish-lamb',
