@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef Munish Kumar | Executive Chef</title>
+    <meta name="description"
+        content="Executive Chef Laurent Vance fine dining portfolio and bespoke culinary booking atelier. Private in-home chef appointments, luxury dinner party management, masterclass tuition, and bespoke gastronomic events.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container header-inner">
+            <a href="#" class="brand-logo">MUNISH KUMAR</a>
+            <nav class="desktop-nav">
+                <a href="#services">Culinary Services</a>
+                <a href="#dishes">Signature Dishes</a>
+                <a href="#pedigree">Hotel Experience</a>
+                <a href="#contact">Contact Me</a>
+            </nav>
+            <div class="header-actions">
+                <button class="btn-outline-gold" onclick="openBookingsManager()">My Bookings (<span
+                        id="navBookingCount">2</span>)</button>
+                <button class="btn-primary-gold" onclick="openBookingModal('in_home_dining')">Book Appointment</button>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div>
+                <div class="kicker">Executive Chef Munish Kumar · Luxury Hotel Gastronomy Director</div>
+                <h1 class="hero-title">Luxury Fine Dining at Your Private Residence</h1>
+                <p class="hero-subtitle">
+                    Experience exceptional culinary artistry with an Executive Chef dedicated to creating memorable dining experiences. From personalised in-home dining and exclusive private dinner parties to interactive chef masterclasses and bespoke culinary services, every dish is crafted with passion, creativity, and attention to detail, bringing restaurant-quality luxury directly to your home, private residence, or superyacht.
+
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary-gold" onclick="openBookingModal('in_home_dining')">Reserve An
+                        Appointment</button>
+                   
+                    <button class="btn-outline-gold" style="border:none; color:var(--text-secondary);"
+                        onclick="scrollToId('contact')">Direct Contact Me →</button>
+                </div>
+                <div class="hero-stats">
+                    
+                    <div>
+                        <div class="stat-val">10 Years</div>
+                        <div class="stat-lbl">Hotel Direction</div>
+                    </div>
+                    <div>
+                        <div class="stat-val">99.8%</div>
+                        <div class="stat-lbl">Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="hero-portrait-card">
+                    <img class="hero-portrait-img" src="./munish1.jpeg" alt="Executive Chef Laurent Vance">
+                    <div class="hero-portrait-badge">
+                        <div
+                            style="font-size:10px; color:var(--gold); text-transform:uppercase; letter-spacing:0.1em; margin-bottom:4px;">
+                            Professional Culinary Experience</div>
+                        <div style="font-family:var(--font-serif); font-size:20px;">Former Executive Head Chef</div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4 CORE SERVICES -->
+    <section id="services" class="section-spacing">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <div class="kicker">Four Main Culinary Services</div>
+                    <h2 class="section-title">Personalised Culinary Experiences</h2>
+                </div>
+                <p class="section-desc">
+                    Every service is personally planned and delivered by Executive Chef Munish Kumar.
+
+                    Menus are specially created for private homes, events, and superyachts according to the client's
+                    requirements.
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <!-- 1. Home make food at home -->
+                <div class="service-card">
+                    <div class="service-img-wrapper">
+                        <img class="service-img"
+                            src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80"
+                            alt="Gourmet In-Home Dining">
+                        <span class="service-badge-pill">Signature Experience</span>
+                    </div>
+                    <div class="service-body">
+                        <span class="service-num">01. In-Home Private Dining</span>
+                        <h3 class="service-title">Gourmet In-Home Dining</h3>
+                        <p class="service-tagline">
+                            Enjoy premium fine dining prepared and served directly in your own kitchen.
+
+                            The chef personally sources fresh, high-quality ingredients from premium markets and
+                            suppliers and prepares every course specially for your occasion.
+                        </p>
+                        <div class="service-specs">
+                            <span>👥 2 to 8 guests</span>
+                            <span>·</span>
+                            <span>⏱ 4 to 5 hours</span>
+                            <span>·</span>
+                            <span>From £195 / guest</span>
+                        </div>
+                        <ul class="service-inclusions">
+                            <li>Chef-created 4 to 7 course seasonal menu</li>
+                            <li>Fresh ingredients sourced from premium markets and suppliers</li>
+                            <li>Live plating and explanation of each dish</li>
+                            <li>Complete kitchen cleaning and sanitisation after the service</li>
+                        </ul>
+                        <div class="service-card-foot">
+                            <span style="font-size:12px; color:var(--text-muted);">Sommelier Pairing Available</span>
+                            <button class="btn-primary-gold" onclick="openBookingModal('in_home_dining')">Book In-Home
+                                Chef</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Small party dinner manage at home -->
+                <div class="service-card">
+                    <div class="service-img-wrapper">
+                        <img class="service-img"
+                            src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=1200&q=80"
+                            alt="Intimate Dinner Party Management">
+                        <span class="service-badge-pill">Party At Home</span>
+                    </div>
+                    <div class="service-body">
+                        <span class="service-num">02. Dinner Party Management at Home</span>
+                        <h3 class="service-title">Complete Private Dinner Party Service</h3>
+                        <p class="service-tagline">
+                            Perfect for family celebrations, special occasions, anniversaries, private parties, and
+                            other important gatherings.
+
+                            The complete food and service experience is professionally managed from start to finish.
+                        </p>
+                        <div class="service-specs">
+                            <span>👥 6 to 24 guests</span>
+                            <span>·</span>
+                            <span>⏱ 5 to 6 hours</span>
+                            <span>·</span>
+                            <span>From £160 / guest</span>
+                        </div>
+                        <ul class="service-inclusions">
+                            <li>Welcome cocktail snacks and canapés – 3 selections</li>
+                            <li>3 to 5 course dinner</li>
+                            <li>Sous-chef and waiting staff coordination</li>
+                            <li>Premium tableware and crystal glasses</li>
+                        </ul>
+                        <div class="service-card-foot">
+                            <span style="font-size:12px; color:var(--text-muted);">Full Event Coordination</span>
+                            <button class="btn-primary-gold" onclick="openBookingModal('dinner_party')">Book Dinner
+                                Party</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Chef teaching -->
+                <div class="service-card">
+                    <div class="service-img-wrapper">
+                        <img class="service-img"
+                            src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1200&q=80"
+                            alt="Private Chef Masterclasses">
+                        <span class="service-badge-pill">Masterwork Tuition</span>
+                    </div>
+                    <div class="service-body">
+                        <span class="service-num">03. Chef Teaching & Masterclasses</span>
+                        <h3 class="service-title">Private Cooking Masterclass</h3>
+                        <p class="service-tagline">
+                            Learn professional fine-dining cooking techniques directly from the chef.
+
+                            The sessions include practical training in classic sauces, handmade truffle pasta,
+                            professional meat cooking techniques, and premium pastry preparation.
+                        </p>
+                        <div class="service-specs">
+                            <span>👥 1 to 6 students</span>
+                            <span>·</span>
+                            <span>⏱ 3.5 hours</span>
+                            <span>·</span>
+                            <span>£580 flat session</span>
+                        </div>
+                        <ul class="service-inclusions">
+                            <li>Practical and interactive cooking session with Chef Munish</li>
+                            <li>Premium meats, specialty ingredients, and professional cooking tools</li>
+                            <li>Detailed recipe and technique guide</li>
+                            <li>Wine tasting with the prepared dishes</li>
+                        </ul>
+                        <div class="service-card-foot">
+                            <span style="font-size:12px; color:var(--text-muted);">Includes Atelier Certificate</span>
+                            <button class="btn-primary-gold" onclick="openBookingModal('masterclass')">Book
+                                Masterclass</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Any other food also book -->
+                <div class="service-card">
+                    <div class="service-img-wrapper">
+                        <img class="service-img"
+                            src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1200&q=80"
+                            alt="Bespoke Food & Culinary Consultation">
+                        <span class="service-badge-pill">Custom Commission</span>
+                    </div>
+                    <div class="service-body">
+                        <span class="service-num">04. Any Other Food & Custom Bookings</span>
+                        <h3 class="service-title">Bespoke Culinary & Food Consulting</h3>
+                        <p class="service-tagline">
+                            <b>Custom culinary services are available for :</b> Superyacht trips, Corporate retreats
+                            ,Restaurant menu development ,Luxury brand VIP events ,Private catering ,Special dietary
+                            requirements ,Other customised food projects.
+                        </p>
+                        <div class="service-specs">
+                            <span>👥 Any scale</span>
+                            <span>·</span>
+                            <span>⏱ Flexible Engagement</span>
+                            <span>·</span>
+                            <span>Custom quotation</span>
+                        </div>
+                        <ul class="service-inclusions">
+                            <li>Direct one-to-one planning with Chef Munish</li>
+                            <li>Sourcing of premium and rare ingredients</li>
+                            <li>Full logistical kitchen brigade setup anywhere</li>
+                            <li>Strict confidentiality & VIP NDA adherence</li>
+                        </ul>
+                        <div class="service-card-foot">
+                            <span style="font-size:12px; color:var(--text-muted);">Villa & Yacht Available</span>
+                            <button class="btn-primary-gold" onclick="openBookingModal('bespoke_culinary')">Book Custom
+                                Service</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SIGNATURE DISHES SHOWCASE -->
+    <section id="dishes" class="section-spacing">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <div class="kicker">Signature Dishes & Culinary Collection</div>
+                    <h2 class="section-title">Premium Signature Dishes</h2>
+                </div>
+                <p class="section-desc">
+                    Explore a selection of specially created dishes using premium ingredients sourced from trusted
+                    suppliers.
+
+                    Each dish can be selected for your personalised dining experience. </p>
+            </div>
+
+            <!-- Filter Controls -->
+            <div class="filter-bar">
+                <button class="filter-btn active" onclick="filterDishes('all')">All Dishes</button>
+                <button class="filter-btn" onclick="filterDishes('Amuse & Starters')">Starters</button>
+                <button class="filter-btn" onclick="filterDishes('Salads')">Salads</button>
+                <button class="filter-btn" onclick="filterDishes('Pastry & Avant-Garde')">Pastry & Avant-Garde</button>
+            </div>
+
+            <!-- Dishes Grid -->
+            <div class="dishes-grid" id="dishesContainer"></div>
+        </div>
+    </section>
+
+
+    <!-- CHEF PEDIGREE -->
+    <section id="pedigree" class="section-spacing">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <div class="kicker">Culinary Heritage & Luxury Hotel Experience</div>
+                    <h2 class="section-title">Executive Hotel Experience</h2>
+                </div>
+                <p class="section-desc">
+                    Chef Munish developed his culinary expertise through some of the most respected luxury hotels
+                </p>
+            </div>
+
+            <div class="pedigree-grid">
+                <div>
+                    <div
+                        style="border:1px solid #2b241d; padding:12px; background:var(--bg-surface); margin-bottom:24px;">
+                        <img src="./munish.jpeg" style="width:100%; aspect-ratio:3/4; object-fit:cover; display:block;"
+                            alt="Chef Vance">
+                        <div style="padding:16px;">
+                            <p
+                                style="font-family:var(--font-serif); font-style:italic; font-size:18px; color:var(--text-primary);">
+                                "True culinary luxury is not excess; it is the absolute clarity of flavour, reverence
+                                for the soil, and uncompromising hospitality."
+                            </p>
+                            <span style="font-size:12px; color:var(--gold); margin-top:8px; display:block;">— Laurent
+                                Vance</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <span style="font-size:11px; color:var(--gold); font-family:monospace;">Dec 2025 –
+                                Present</span>
+                            <h3 style="font-size:24px; margin:4px 0;">Ten 11 Lounge - Bhuj,Gujarat
+                            </h3>
+                            <div
+                                style="font-size:12px; color:var(--text-secondary); text-transform:uppercase; margin-bottom:8px;">
+                                Executive Head Chef</div>
+                            <p style="font-size:13px; color:var(--text-secondary);">Lead and manage the entire kitchen
+                                team, including Sous Chef, CDP, DCDP and Commi staff.
+                                Design and develop innovative menus aligned with the concept and customer preferences.
+                            </p>
+                        </div>
+                        <div class="timeline-item">
+                            <span style="font-size:11px; color:var(--gold); font-family:monospace;">April 2025 –
+                                November 2025</span>
+                            <h3 style="font-size:24px; margin:4px 0;">Neemsi Restaurant - JP Nagar,Bengaluru</h3>
+                            <div
+                                style="font-size:12px; color:var(--text-secondary); text-transform:uppercase; margin-bottom:8px;">
+                                Sous Chef</div>
+                            <p style="font-size:13px; color:var(--text-secondary);">Assist the Executive Chef in overall
+                                kitchen management and operations.
+                                Supervise and coordinate all kitchen sections.
+                                Ensure consistent food quality, taste and presentation standards.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <span style="font-size:11px; color:var(--gold); font-family:monospace;">May 2024 – Oct
+                                2024</span>
+                            <h3 style="font-size:24px; margin:4px 0;">Armaya By Ten11 Group - Gandhidham, Gujarat</h3>
+                            <div
+                                style="font-size:12px; color:var(--text-secondary); text-transform:uppercase; margin-bottom:8px;">
+                                Chef de Partie</div>
+                            <p style="font-size:13px; color:var(--text-secondary);">Independently manage a designated
+                                kitchen section. Prepare and cook dishes according to standard recipes and presentation
+                                guidelines. Maintain high standards of food quality, taste and consistency.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <span style="font-size:11px; color:var(--gold); font-family:monospace;">April 2023 – April
+                                2024</span>
+                            <h3 style="font-size:24px; margin:4px 0;">Hotel Bizz - Rajkot, Gujarat</h3>
+                            <div
+                                style="font-size:12px; color:var(--text-secondary); text-transform:uppercase; margin-bottom:8px;">
+                                Demi Chef de Partie</div>
+                            <p style="font-size:13px; color:var(--text-secondary);">Assist CDP in managing a specific
+                                kitchen section. Supervise and guide Commi 1, 2 and 3 staff. Monitor stock levels and
+                                assist in ordering ingredients.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <span style="font-size:11px; color:var(--gold); font-family:monospace;">Feb 2021 – Oct
+                                2022</span>
+                            <h3 style="font-size:24px; margin:4px 0;">El Chico Restaurant - Uttar Pradesh</h3>
+                            <div
+                                style="font-size:12px; color:var(--text-secondary); text-transform:uppercase; margin-bottom:8px;">
+                                Demi Chef de Partie</div>
+                            <p style="font-size:13px; color:var(--text-secondary);">Assist CDP in managing a specific
+                                kitchen section. Follow hygiene, sanitation and safety regulations.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <span style="font-size:11px; color:var(--gold); font-family:monospace;">April 2020 – Jan
+                                2021</span>
+                            <h3 style="font-size:24px; margin:4px 0;">Red Earth Resorts - Karnataka</h3>
+                            <div
+                                style="font-size:12px; color:var(--text-secondary); text-transform:uppercase; margin-bottom:8px;">
+                                Commi 1 Chef</div>
+                            <p style="font-size:13px; color:var(--text-secondary);">Prepare and cook dishes as per
+                                standard recipes with minimal supervision. Ensure proper mise en place and smooth
+                                kitchen operations.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <span style="font-size:11px; color:var(--gold); font-family:monospace;">Dec 2019 – March
+                                2020</span>
+                            <h3 style="font-size:24px; margin:4px 0;">The Fern Group - Madhya Pradesh</h3>
+                            <div
+                                style="font-size:12px; color:var(--text-secondary); text-transform:uppercase; margin-bottom:8px;">
+                                Commi 2 Chef</div>
+                            <p style="font-size:13px; color:var(--text-secondary);">Prepare and cook food under the
+                                supervision of senior chefs. Apply basic cooking techniques and handle an assigned
+                                section.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <span style="font-size:11px; color:var(--gold); font-family:monospace;">June 2019 – Dec
+                                2019</span>
+                            <h3 style="font-size:24px; margin:4px 0;">Royal Orbit</h3>
+                            <div
+                                style="font-size:12px; color:var(--text-secondary); text-transform:uppercase; margin-bottom:8px;">
+                                Commi 3 Chef</div>
+                            <p style="font-size:13px; color:var(--text-secondary);">Assist with food preparation and
+                                support senior chefs in daily kitchen operations.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <span style="font-size:11px; color:var(--gold); font-family:monospace;">May 2017 – Oct 2017
+                            </span>
+                            <h3 style="font-size:24px; margin:4px 0;">Hotel Hive, Unit of Tux Hospitality by Shipra
+                                Group - Alwar, Rajasthan</h3>
+                            <div
+                                style="font-size:12px; color:var(--text-secondary); text-transform:uppercase; margin-bottom:8px;">
+                                Job Training</div>
+                            <p style="font-size:13px; color:var(--text-secondary);">Learn kitchen operations, hygiene
+                                and safety standards. Follow instructions and improve culinary skills.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT ME SECTION (WORKING) -->
+    <section id="contact" class="section-spacing">
+        <div class="container">
+            <div class="contact-grid">
+                <div>
+                    <div class="kicker">Confidential Client Relations</div>
+                    <h2 class="section-title">Contact Executive Chef Munish</h2>
+                    <p class="section-desc" style="margin-top:16px;">
+                        For direct Private appointments,
+                        High-profile bookings,
+                        Embassy banquets,
+                        Superyacht events,
+                        Private country estate residencies,
+                        Luxury private dining,
+                        Culinary consulting.
+                    </p>
+
+                    <div class="contact-info-list">
+                        <div class="contact-info-item">
+                            <h4>Bengaluru Atelier & Consultations</h4>
+                            <p>Bengaluru, Karnataka</p>
+                            <p style="font-size:11px; color:var(--text-muted);">Gujarat & Himachal Pradesh appointments
+                                are available on request.
+                            </p>
+                        </div>
+                        <div class="contact-info-item">
+                            <h4>Direct Telephone Line</h4>
+                            <p style="color:var(--gold); font-family:monospace; font-size:15px;">+91 70843 21272</p>
+                            <p style="font-size:11px; color:var(--text-muted);">Available daily 08:00 – 21:00 GMT</p>
+                        </div>
+                        <div class="contact-info-item">
+                            <h4>Direct Email</h4>
+                            <p style="color:var(--gold); font-family:monospace; font-size:15px;">
+                                Chefmunis53@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="contact-form">
+                        <div class="kicker">Direct Enquiry Form</div>
+                        <form id="contactMeForm" onsubmit="handleContactSubmit(event)">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="contactName">Your Full Name *</label>
+                                    <input type="text" id="contactName" required
+                                        placeholder="e.g. Lady Eleanor Montgomery">
+                                </div>
+                                <div class="form-group">
+                                    <label for="contactEmail">Email Address *</label>
+                                    <input type="email" id="contactEmail" required placeholder="patron@domain.co.uk">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="contactPhone">Phone Number</label>
+                                    <input type="tel" id="contactPhone" placeholder="+44 20 7946 0912">
+                                </div>
+                                <div class="form-group">
+                                    <label for="contactService">Service Interest</label>
+                                    <select id="contactService">
+                                        <option value="Gourmet In-Home Dining">Gourmet In-Home Dining</option>
+                                        <option value="Dinner Party Management">Dinner Party Management
+                                        </option>
+                                        <option value="Chef Teaching & Masterclass">Chef Masterclass
+                                        </option>
+                                        <option value="Bespoke Food & Consulting">Custom Culinary Service
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contactLocation">Event Location / City</label>
+                                <input type="text" id="contactLocation"
+                                    placeholder="e.g. Basvanagudi, Bengaluru, Karnataka">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contactMessage">Your Message / Requirements *</label>
+                                <textarea id="contactMessage" rows="4" required
+                                    placeholder="Please share your preferred date, number of guests, type of dining experience, food preferences, dietary requirements, or any other special requests...."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn-primary-gold" style="width:100%; padding:14px;">Send
+                                Message to Chef Munish</button>
+
+                            <div id="contactSuccessMsg"
+                                style="display:none; margin-top:20px; padding:16px; background:#18130e; border:1px solid var(--gold); text-align:center;">
+                                <p style="color:var(--gold); font-weight:600; margin-bottom:4px;">✦ Message Successfully
+                                    Dispatched</p>
+                                <p style="font-size:12px; color:var(--text-secondary);">Thank you. Chef Laurent Vance's
+                                    atelier has received your message and will respond within 4 hours.</p>
+                                <div
+                                    style="margin-top:12px; display:flex; justify-content:center; gap:8px; flex-wrap:wrap;">
+                                    <button type="button" class="btn-outline-gold" onclick="sendViaMailtoClient()">Open
+                                        in Email Client (mailto)</button>
+                                    <button type="button" class="btn-outline-gold" onclick="copyContactReceipt()">Copy
+                                        Enquiry Receipt</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div
+                        style="font-family:var(--font-serif); font-size:22px; color:var(--text-primary); margin-bottom:12px;">
+                        MUNISH KUMAR</div>
+                    <p>Executive Head Chef & Luxury Gastronomy Director
+
+                        Specialised in: Private in-home fine dining,
+                        Chef masterclasses,
+                        Private dinner parties,
+                        Custom culinary consulting,
+                        Luxury events,
+                        Premium food experiences.</p>
+                </div>
+                <div>
+                    <h4 style="color:var(--gold); text-transform:uppercase; margin-bottom:12px;">Services</h4>
+                    <p><a href="#services">Gourmet In-Home Dining</a></p>
+                    <p><a href="#services">Dinner Party Management</a></p>
+                    <p><a href="#services">Chef Teaching & Masterclass</a></p>
+                    <p><a href="#services">Bespoke Food Consulting</a></p>
+                </div>
+                <div>
+                    <h4 style="color:var(--gold); text-transform:uppercase; margin-bottom:12px;">Culinary Collection
+                    </h4>
+                    <p><a href="#dishes">Signature Dishes</a></p>
+                    <p><a href="#pedigree">Hotel Experience</a></p>
+                    <p><a href="#testimonials">Testimonials</a></p>
+                </div>
+                <div>
+                    <h4 style="color:var(--gold); text-transform:uppercase; margin-bottom:12px;">Service Locations</h4>
+                    <p>Bengaluru</p>
+                    <p>Gujarat</p>
+                    <p>Himachal Pradesh</p>
+                    <p style="color:var(--gold); font-family:monospace; margin-top:8px;">+91 70843 21272</p>
+                </div>
+            </div>
+            <div
+                style="border-top:1px solid #1f1913; padding-top:20px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px;">
+                <div>Created By
+                    <b><a href="https://haidartech.vercel.app" target="_blank">Haidarabbas</a></b>
+                    ·
+                    © 2026 All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOOKING MODAL -->
+    <div id="bookingModalOverlay" class="modal-overlay">
+        <div class="modal-dialog">
+            <button class="modal-close" onclick="closeBookingModal()">✕</button>
+            <div class="kicker">Atelier Vance · Appointment Reservation</div>
+            <h3 style="font-size:28px; margin-bottom:20px;" id="bookingModalTitle">Book a Culinary Appointment</h3>
+
+            <form id="appointmentBookingForm" onsubmit="handleBookingSubmit(event)">
+                <div class="form-group">
+                    <label>Select Service Experience</label>
+                    <select id="modalServiceSelect" onchange="updateBookingCostEstimate()">
+                        <option value="in_home_dining">01. Gourmet In-Home Dining (From £195/guest)</option>
+                        <option value="dinner_party">02. Intimate Dinner Party Management (From £160/guest)</option>
+                        <option value="masterclass">03. Private Chef Masterclasses (£580 flat session)</option>
+                        <option value="bespoke_culinary">04. Bespoke Culinary & Food Consulting (Bespoke Quote)</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Target Date</label>
+                        <input type="date" id="modalBookingDate" required value="2026-10-18" min="2026-10-01">
+                    </div>
+                    <div class="form-group">
+                        <label>Service Window</label>
+                        <select id="modalTimeSlot">
+                            <option value="19:00 - Evening Dinner Service">19:00 - Evening Dinner Service (Chef arrives
+                                at 16:30)</option>
+                            <option value="12:30 - Luncheon Service">12:30 - Luncheon Service (Chef arrives at 10:00)
+                            </option>
+                            <option value="14:30 - Masterclass Afternoon">14:30 - Masterclass Afternoon (3.5 hours
+                                tuition)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Guest Count: <span id="guestCountVal">4</span></label>
+                        <input type="range" id="modalGuestCount" min="2" max="24" value="4"
+                            oninput="document.getElementById('guestCountVal').innerText=this.value; updateBookingCostEstimate();">
+                    </div>
+                    <div class="form-group">
+                        <label>Course Progression</label>
+                        <select id="modalCourseCount" onchange="updateBookingCostEstimate()">
+                            <option value="3">3 Courses</option>
+                            <option value="4" selected>4 Courses (Prestige)</option>
+                            <option value="5">5 Courses (Grand Tasting)</option>
+                            <option value="7">7 Courses (Royal Banqueting)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Residence / Venue Address</label>
+                    <input type="text" id="modalAddress" required
+                        placeholder="e.g. 14 Cadogan Square, Knightsbridge, London SW1X / Cotswolds Estate">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Patron Full Name</label>
+                        <input type="text" id="modalClientName" required placeholder="Sir Arthur Montgomery">
+                    </div>
+                    <div class="form-group">
+                        <label>Direct Email Address</label>
+                        <input type="email" id="modalClientEmail" required placeholder="patron@domain.co.uk">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Dietary Restrictions / Allergies</label>
+                    <input type="text" id="modalDietary"
+                        placeholder="e.g. Shellfish allergy for 1 guest, gluten-free dessert preferred">
+                </div>
+
+                <div style="background:#090807; border:1px solid #241e17; padding:16px; margin:20px 0;">
+                    <div style="display:flex; justify-content:space-between; font-size:14px; margin-bottom:4px;">
+                        <span>Estimated Total Investment:</span>
+                        <span style="color:var(--gold); font-family:var(--font-serif); font-size:22px;"
+                            id="estimatedCostLabel">£780 GBP</span>
+                    </div>
+                    <div style="font-size:11px; color:var(--text-muted);">Includes Chef Vance preparation, luxury market
+                        sourcing, and spotless kitchen clean-down.</div>
+                </div>
+
+                <button type="submit" class="btn-primary-gold" style="width:100%; padding:14px;">Confirm & Book Culinary
+                    Appointment</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- BOOKINGS MANAGER MODAL -->
+    <div id="bookingsManagerOverlay" class="modal-overlay">
+        <div class="modal-dialog">
+            <button class="modal-close" onclick="closeBookingsManager()">✕</button>
+            <div class="kicker">Patron Concierge Portal</div>
+            <h3 style="font-size:28px; margin-bottom:20px;">Your Active Reservations</h3>
+            <div id="bookingsListContainer"></div>
+        </div>
+    </div>
+
+    <!-- DISH DETAIL MODAL -->
+    <div id="dishDetailOverlay" class="modal-overlay">
+        <div class="modal-dialog" style="max-width:600px;">
+            <button class="modal-close" onclick="closeDishDetail()">✕</button>
+            <div class="kicker" id="modalDishCourse">Heritage Meats</div>
+            <h3 style="font-size:28px; margin-bottom:4px;" id="modalDishTitle">Dish Title</h3>
+            <p style="font-size:13px; color:var(--text-secondary); line-height:1.7; margin-bottom:20px;"
+                id="modalDishDesc">Description</p>
+            <div style="background:#090807; border:1px solid #241e17; padding:16px; margin-bottom:20px;">
+            <button class="btn-primary-gold" style="width:100%;"
+                onclick="closeDishDetail(); openBookingModal('in_home_dining');">Book Appointment with This
+                Dish</button>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION -->
+    <div id="toast"></div>
+
+    <!-- PURE VANILLA JAVASCRIPT (ZERO TYPESCRIPT) -->
+    <script src="script.js"></script>
+</body>
+
+</html>
