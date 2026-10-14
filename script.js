@@ -11,70 +11,70 @@ const DISHES_DATA = [
                 name: 'Guacamole mango cup ',
                 course: 'Amuse & Starters',
                 desc: 'A refreshing blend of creamy avocado and juicy ripe mango, tossed with fresh herbs, zesty lime, and a hint of spice. Served in a delightful cup, this vibrant starter offers the perfect balance of sweet, tangy, and creamy flavours.',
-                image: './guacamole-mango-cup.jpg'
+                image: './guacamole-mango-cup.JPG'
             },
             {
                 id: 'dish-turbot',
                 name: 'Italian Samosa with Muhammara Sauce',
                 course: 'Amuse & Starters',
                 desc: 'Crispy golden samosas filled with a delicious Italian-inspired mixture of herbs, cheese, and savoury flavours, served with rich and smoky Muhammara sauce made from roasted red peppers and walnuts. A delightful fusion starter combining Italian flavours with a Middle Eastern twist.',
-                image: './italian-samosa.jpg'
+                image: './italian-samosa.JPG'
             },
             {
                 id: 'dish-lamb',
                 name: 'Purple Cabbage Dimsum with Brown Garlic Sauce',
                 course: 'Amuse & Starters',
                 desc: 'Delicate dumplings filled with crunchy purple cabbage and aromatic seasonings, steamed to perfection for a light and flavourful bite. Served with a rich brown garlic sauce that adds a savoury, garlicky touch, making this starter a perfect blend of freshness and bold Asian flavours.',
-                image: './dimsim.jpg'
+                image: './dimsim.JPG'
             },
             {
                 id: 'dish-gnocchi',
                 name: 'Malai Gnocchi with Truffle Cream Sauce',
                 course: 'Amuse & Starters',
                 desc: 'Soft, pillowy gnocchi coated in a rich and creamy malai sauce, infused with aromatic spices and a touch of indulgence. Finished with luxurious truffle cream sauce, this fusion delicacy brings together comforting Indian flavours and elegant Italian sophistication for a truly indulgent dining experience.',
-                image: './gnocchi.jpg'
+                image: './gnocchi.JPG'
             },
             {
                 id: 'dish-gnocchi',
                 name: 'Crispy Corn Fritters',
                 course: 'Amuse & Starters',
                 desc: 'Golden, crispy fritters made with sweet corn kernels, fresh herbs, and aromatic spices, fried to perfection for a crunchy exterior and a soft, flavourful centre. Served with a delicious dipping sauce, these irresistible bites offer the perfect combination of sweetness, spice, and crunch.',
-                image: './crispy-corn.jpg'
+                image: './crispy-corn.JPG'
             },
             {
                 id: 'dish-cesar',
                 name: 'Cesar Salad',
                 course: 'Salads',
                 desc: 'A refreshing mix of crisp romaine lettuce tossed in a creamy Caesar dressing, topped with crunchy golden croutons and a generous sprinkle of Parmesan cheese. Light, flavourful, and perfectly balanced, this classic salad is a delightful start to any meal.',
-                image: './cesar.jpg'
+                image: './cesar.JPG'
             },
             {
                 id: 'dish-sphere',
                 name: 'Deconstructed brownie',
                 course: 'Pastry & Avant-Garde',
                 desc: 'A creative twist on the classic chocolate brownie, featuring rich, fudgy brownie pieces paired with smooth chocolate sauce, creamy elements, and delightful textures. Beautifully presented for a decadent dessert experience that combines indulgent chocolate flavours with an elegant touch.',
-                image: './brownie.jpg'
+                image: './brownie.JPG'
             },
             {
                 id: 'dish-sphere',
                 name: 'Pistachio Cannoli with Caramel Sauce',
                 course: 'Pastry & Avant-Garde',
                 desc: 'A crispy golden Italian pastry shell filled with smooth, creamy pistachio filling, offering a delightful blend of nutty richness and sweetness. Drizzled with luscious caramel sauce and finished with a touch of pistachio crunch, this elegant dessert is the perfect balance of creamy, crispy, and indulgent flavours.',
-                image: './canoli.jpg'
+                image: './canoli.JPG'
             },
             {
                 id: 'dish-sphere',
                 name: 'Mango Panna Cotta',
                 course: 'Pastry & Avant-Garde',
                 desc: 'A silky-smooth Italian dessert infused with the tropical sweetness of ripe mangoes. Delicately creamy with a refreshing fruity flavour, topped with luscious mango purée for a perfect balance of sweetness and elegance. A delightful dessert to end your meal on a refreshing note.',
-                image: './pannacotta.jpg'
+                image: './pannacotta.JPG'
             },
             {
                 id: 'dish-sphere',
                 name: 'Motichoor Ladoo',
                 course: 'Pastry & Avant-Garde',
                 desc: 'A traditional Indian sweet made with tiny, golden gram flour pearls, delicately fried and soaked in aromatic sugar syrup. Blended with hints of cardamom and garnished with nuts, this melt-in-the-mouth delicacy brings authentic Indian sweetness to every celebration.',
-                image: './laddu.jpg'
+                image: './laddu.JPG'
             }
         ];
 
