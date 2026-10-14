@@ -25,56 +25,56 @@ const DISHES_DATA = [
                 name: 'Purple Cabbage Dimsum with Brown Garlic Sauce',
                 course: 'Amuse & Starters',
                 desc: 'Delicate dumplings filled with crunchy purple cabbage and aromatic seasonings, steamed to perfection for a light and flavourful bite. Served with a rich brown garlic sauce that adds a savoury, garlicky touch, making this starter a perfect blend of freshness and bold Asian flavours.',
-                image: './dimsim.jpeg'
+                image: './dimsim.jpg'
             },
             {
                 id: 'dish-gnocchi',
                 name: 'Malai Gnocchi with Truffle Cream Sauce',
                 course: 'Amuse & Starters',
                 desc: 'Soft, pillowy gnocchi coated in a rich and creamy malai sauce, infused with aromatic spices and a touch of indulgence. Finished with luxurious truffle cream sauce, this fusion delicacy brings together comforting Indian flavours and elegant Italian sophistication for a truly indulgent dining experience.',
-                image: './gnocchi.jpeg'
+                image: './gnocchi.jpg'
             },
             {
                 id: 'dish-gnocchi',
                 name: 'Crispy Corn Fritters',
                 course: 'Amuse & Starters',
                 desc: 'Golden, crispy fritters made with sweet corn kernels, fresh herbs, and aromatic spices, fried to perfection for a crunchy exterior and a soft, flavourful centre. Served with a delicious dipping sauce, these irresistible bites offer the perfect combination of sweetness, spice, and crunch.',
-                image: './crispy-corn.jpeg'
+                image: './crispy-corn.jpg'
             },
             {
                 id: 'dish-cesar',
                 name: 'Cesar Salad',
                 course: 'Salads',
                 desc: 'A refreshing mix of crisp romaine lettuce tossed in a creamy Caesar dressing, topped with crunchy golden croutons and a generous sprinkle of Parmesan cheese. Light, flavourful, and perfectly balanced, this classic salad is a delightful start to any meal.',
-                image: './cesar.jpeg'
+                image: './cesar.jpg'
             },
             {
                 id: 'dish-sphere',
                 name: 'Deconstructed brownie',
                 course: 'Pastry & Avant-Garde',
                 desc: 'A creative twist on the classic chocolate brownie, featuring rich, fudgy brownie pieces paired with smooth chocolate sauce, creamy elements, and delightful textures. Beautifully presented for a decadent dessert experience that combines indulgent chocolate flavours with an elegant touch.',
-                image: './brownie.jpeg'
+                image: './brownie.jpg'
             },
             {
                 id: 'dish-sphere',
                 name: 'Pistachio Cannoli with Caramel Sauce',
                 course: 'Pastry & Avant-Garde',
                 desc: 'A crispy golden Italian pastry shell filled with smooth, creamy pistachio filling, offering a delightful blend of nutty richness and sweetness. Drizzled with luscious caramel sauce and finished with a touch of pistachio crunch, this elegant dessert is the perfect balance of creamy, crispy, and indulgent flavours.',
-                image: './canoli.jpeg'
+                image: './canoli.jpg'
             },
             {
                 id: 'dish-sphere',
                 name: 'Mango Panna Cotta',
                 course: 'Pastry & Avant-Garde',
                 desc: 'A silky-smooth Italian dessert infused with the tropical sweetness of ripe mangoes. Delicately creamy with a refreshing fruity flavour, topped with luscious mango purée for a perfect balance of sweetness and elegance. A delightful dessert to end your meal on a refreshing note.',
-                image: './pannacotta.jpeg'
+                image: './pannacotta.jpg'
             },
             {
                 id: 'dish-sphere',
                 name: 'Motichoor Ladoo',
                 course: 'Pastry & Avant-Garde',
                 desc: 'A traditional Indian sweet made with tiny, golden gram flour pearls, delicately fried and soaked in aromatic sugar syrup. Blended with hints of cardamom and garnished with nuts, this melt-in-the-mouth delicacy brings authentic Indian sweetness to every celebration.',
-                image: './laddu.jpeg'
+                image: './laddu.jpg'
             }
         ];
 
